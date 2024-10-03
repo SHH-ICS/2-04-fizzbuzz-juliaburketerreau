@@ -10,12 +10,10 @@ result = ""
 for myNumber in range(32):
   if (myNumber+1) % 3 == 0:
     result = str(result) + "Fizz" + "\n"
-  else:
-    result = str(result) + str(myNumber+1) + "\n"
+  
   if (myNumber+1) % 15 == 0:
     result = str(result) + "Fizz buzz" + "\n"
-  else:
-    result = str(result) + str(myNumber+1) + "\n"
+  
   if (myNumber+1) % 5 == 0:
     result = str(result) + "buzz" + "\n"
   else:
