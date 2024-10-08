@@ -14,8 +14,10 @@ for myNumber in range(32):
   elif (myNumber+1) % 15 == 0:
     result = str(result) + "Fizz buzz" + "\n"
   
-  if (myNumber+1) % 5 == 0:
+  elif (myNumber+1) % 5 == 0:
     result = str(result) + "buzz" + "\n"
+  else:
+    result = str(result) + str(myNumber) + "\n"
 
 
 print(result)
