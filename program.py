@@ -5,20 +5,18 @@
 # For multiples of 5, output   Buzz
 # For multiples of 15, output   FizzBuzz
 # End at 32
-
-result = ""
-for myNumber in range(32):
-  if (myNumber+1) % 3 == 0:
-    result = str(result) + "Fizz" + "\n"
-  
-  elif (myNumber+1) % 5 == 0:
-    result = str(result) + "buzz" + "\n"
-
-  elif (myNumber+1) % 15 == 0:
-    result = str(result) + "Fizz buzz" + "\n"
-
+fizz = 3
+buzz = 5
+fizzbuzz = 15
+for myNumber in range(1, 33):
+  if myNumber % fizzbuzz == 0:
+    print("fizzbuzz")
+  elif myNumber % fizz == 0:
+    print("fizz")
+  elif myNumber % buzz == 0:
+    print("buzz")
   else:
-    result = str(result) + str(myNumber) + "\n"
+    print(myNumber)
 
 
-print(result)
+
